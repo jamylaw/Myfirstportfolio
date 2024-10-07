@@ -1,0 +1,373 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #6c63ff;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9f43;
+}
+
+.about {
+    background-color: #ff9f43;
+    color: white;
+    padding: 50px 0;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-content img{
+    width: 350px;
+    height: auto;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.about-text h2 {
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: #000;
+    position: relative;
+    top: 35px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #000;
+}
+
+
+.project {
+    padding: 2em;
+    text-align: center;
+}
+
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.grid {
+    display: flex;
+    gap: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+}
+
+.grid a{
+    text-decoration: none;
+    color: black;
+}
+
+.grid a :hover{
+    background-color: grey;
+    padding: 2px;
+    border-radius: 25px;
+
+}
+
+.project-card {
+    background-color:white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+.project-card:hover {
+    translate: y (-10px);
+}
+
+.project-card img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+.project-card p {
+    padding: 0 15px 15px;
+}
+
+#contact {
+    background-color: grey;
+    color: white;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    right: 0px;
+    text-align: center;
+}
+
+#contact p {
+    margin: 5px 0;
+    padding: 5px 0;
+    font-size: 1.1rem;
+}
+
+#contact h2 {
+    color: #000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: -115px;
+}
+
+input, textarea {
+    padding: 1em;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    width: 80%;
+}
+
+button {
+    background-color: black;
+    color: #fff;
+    border-radius: 25px;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    left: -110px;
+    top: -10px;
+    transition: 1s;
+    
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-media h2 {
+    color: #000;
+}
+
+.social a{
+    font-size: 3em;
+    color: black;
+}
+
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    clear: both;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media(max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        margin: 0 0 20px 0;
+    }
+
+    .project {
+        padding: 2em;
+        text-align: center;
+    }
+    
+    
+    h2 {
+        margin-bottom: 15px;
+        font-size: 2rem;
+    }
+    
+    .grid {
+        display: block;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+    }
+    
+    .grid a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .grid a :hover{
+        background-color: grey;
+        padding: 2px;
+        border-radius: 25px;
+    
+    }
+    
+    
+    .project-card {
+        background-color: #333;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+        width: 100%;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    
+    .project-card:hover {
+        translate: y (-10px);
+    }
+    
+    .project-card img {
+        width: 150px;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .project-card h3 {
+        padding: 15px;
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+    .project-card p {
+        padding: 0 15px 15px;
+    }
+
+    .all {
+        background-color: aquamarine;
+    }
+
+    #contact {
+        background-color: grey;
+        color: white;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        right: 0px;
+        text-align: center;
+    }
+    
+    #contact p {
+        margin: 5px 0;
+        padding: 5px 0;
+        font-size: 1.1rem;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: -40px;
+    }
+    
+    input, textarea {
+        padding: 1em;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        width: 85%;
+    }
+    
+    button {
+        background-color: black;
+        color: #fff;
+        border-radius: 25px;
+        padding: 5px;
+        cursor: pointer;
+        position: relative;
+        left: -40px;
+        top: -10px;
+        transition: 1s;
+        
+    }
+
+
+    .social{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        position: relative;
+        top: -20px;
+    }
+
+    .social-media {
+        position: relative;
+        top: 20px;
+    }
+    
+    .social-media h2 {
+        color: #000;
+        font-size: 1.5em;
+    }
+    
+    .social a{
+        font-size: 1.3em;
+        color: black;
+    }    
+}
+
+
+
+
+
